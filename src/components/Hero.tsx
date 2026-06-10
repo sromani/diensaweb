@@ -87,29 +87,16 @@ function PhoneMockup() {
     <div className="relative mx-auto w-[280px] sm:w-[300px]">
       <div className="rounded-[2.5rem] border border-border bg-zinc-950 p-3 shadow-2xl shadow-black/50">
         <div className="overflow-hidden rounded-[2rem] border border-border/80 bg-card">
-          <div className="flex items-center justify-between px-5 py-3 text-[10px] text-muted">
-            <span>9:41</span>
-            <span className="font-semibold text-foreground">Capture Chess</span>
-            <span>100%</span>
-          </div>
           <img
-            src="/screenshots/board-analysis.svg"
-            alt="Capture Chess analyzing a chess position"
+            src="/screenshots/mobile-home.png"
+            alt="Capture Chess home screen"
             width={276}
-            height={520}
+            height={598}
             className="w-full"
             loading="eager"
             fetchPriority="high"
           />
         </div>
-      </div>
-      <div className="absolute -bottom-6 -left-8 hidden rounded-xl border border-border bg-card/90 px-4 py-3 shadow-xl backdrop-blur sm:block">
-        <p className="text-[10px] uppercase tracking-wider text-muted">Eval</p>
-        <p className="text-lg font-bold text-accent">+1.4</p>
-      </div>
-      <div className="absolute -top-4 -right-6 hidden rounded-xl border border-border bg-card/90 px-4 py-3 shadow-xl backdrop-blur sm:block">
-        <p className="text-[10px] uppercase tracking-wider text-muted">Best move</p>
-        <p className="text-sm font-semibold">Nf3 →</p>
       </div>
     </div>
   );

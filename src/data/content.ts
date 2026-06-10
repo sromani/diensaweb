@@ -1,12 +1,12 @@
 export const APPLE_APP_ID = "6778191746";
 export const APP_STORE_URL = `https://apps.apple.com/app/id${APPLE_APP_ID}`;
 export const CONTACT_EMAIL = "sromani@gmail.com";
-export const APP_LOGO_SRC = "/og-image.png";
+export const APP_LOGO_SRC = "/app-icon.png";
 
 export const LEGAL = {
   appName: "Capture Chess",
-  websiteUrl: "https://capturechess.com/",
-  privacyUrl: "https://capturechess.com/privacy",
+  websiteUrl: "https://diensa.com/",
+  privacyUrl: "https://diensa.com/privacy",
   effectiveDate: "June 10, 2026",
   lastUpdated: "June 10, 2026",
 } as const;
@@ -78,28 +78,28 @@ export const FEATURES = [
 
 export const SCREENSHOTS = [
   {
-    src: "/screenshots/mobile-home.svg",
-    alt: "Capture Chess home screen with capture actions",
+    src: "/screenshots/mobile-home.png",
+    alt: "Capture Chess home screen with Take Photo and Upload Image actions",
     title: "Home",
-    caption: "Scan or analyze from one screen",
+    caption: "Scan or upload from one screen",
   },
   {
-    src: "/screenshots/scan-result.svg",
-    alt: "Detected chess position with board overlay",
+    src: "/screenshots/scan-result.png",
+    alt: "Scanned chess position with engine mate detection",
     title: "Scan Result",
-    caption: "Vision overlay confirms every square",
+    caption: "Instant FEN from a real board photo",
   },
   {
-    src: "/screenshots/board-analysis.svg",
-    alt: "Interactive board with engine evaluation",
+    src: "/screenshots/board-analysis.png",
+    alt: "Interactive board with Stockfish evaluation and best-move arrows",
     title: "Analysis",
-    caption: "Stockfish eval bar and best-move arrows",
+    caption: "Depth, eval bar, and engine lines",
   },
   {
-    src: "/screenshots/openings.svg",
-    alt: "Opening explorer with guided lessons",
+    src: "/screenshots/openings.png",
+    alt: "Opening catalog with guided learning and practice",
     title: "Openings",
-    caption: "Study lines with guided learning",
+    caption: "Study classic lines on the go",
   },
 ] as const;
 
