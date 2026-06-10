@@ -42,8 +42,10 @@ Alternatively, deploy from CLI:
 
 ```bash
 npm run build
-npx wrangler pages deploy dist --project-name=capture-chess
+npx wrangler deploy
 ```
+
+`wrangler.jsonc` enables SPA fallback for client routes like `/privacy` without using `_redirects` (which causes infinite-loop errors on deploy).
 
 ## Before Launch Checklist
 
