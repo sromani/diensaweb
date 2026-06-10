@@ -1,47 +1,37 @@
-# Deploy en Cloudflare (Capture Chess)
+# Deploy en Cloudflare Workers (Capture Chess)
 
-Este sitio es **100% estático**. No uses `wrangler deploy` (Workers) — eso provoca el error de `_redirects infinite loop`.
+Sitio estático desplegado como **Worker con assets**. No usa SPA (`not_found_handling: none`).
 
-## Opción recomendada: Cloudflare Pages
+## Configuración en Cloudflare (Workers Builds)
 
-1. Entrá a [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Elegí el repo `sromani/diensaweb`.
-3. Configuración de build:
+En **Workers & Pages** → **diensaweb** → **Settings** → **Build**:
+
+| Campo | Valor |
+|-------|--------|
+| **Build command** | `npm run deploy` |
+| **Deploy command** | *(dejar vacío si Build ya incluye deploy)* |
+
+Si Build y Deploy están separados:
 
 | Campo | Valor |
 |-------|--------|
 | **Build command** | `npm run build` |
-| **Build output directory** | `dist` |
-| **Deploy command** | *(dejar vacío)* |
+| **Deploy command** | `npx wrangler deploy` |
 
-4. **Save and Deploy**.
+Después: **Clear build cache** → **Retry deployment**.
 
-No agregues `wrangler deploy` en ningún campo. Pages sirve los archivos de `dist` directamente.
+## Importante
 
----
+- El archivo `wrangler.jsonc` del repo define `not_found_handling: "none"`. Eso evita el `_redirects` con `/* → /index.html` que falla.
+- Si el deploy sigue fallando, el worker **diensaweb** en Cloudflare puede tener SPA guardado de un deploy anterior. **Borrá el worker** y volvé a conectarlo al repo, o editá en el dashboard **Settings → Variables and Assets → Static assets** y poné **Not found handling: None** (no Single Page Application).
 
-## Si ya tenés un proyecto Workers "diensaweb" que falla
-
-Ese worker tiene **SPA mode** activo en Cloudflare (genera `/* → /index.html` y la API lo rechaza). No se arregla solo con código del repo.
-
-**Solución:** creá un proyecto **Pages** nuevo (pasos arriba) o cambiá el deploy:
-
-1. **Workers & Pages** → tu proyecto → **Settings** → **Build**
-2. Borrá el **Deploy command** si dice `wrangler deploy` o `npx wrangler deploy`
-3. Dejá solo build: `npm run build` y output `dist`
-4. **Clear build cache** y redeploy
-
-O desde CLI (después de `npm run build`):
+## Deploy local
 
 ```bash
-npm run deploy:pages
+npm run deploy
 ```
-
-Eso usa `wrangler pages deploy`, **no** Workers scripts.
-
----
 
 ## URLs
 
-- Home: `/`
-- Privacidad (App Store): `/privacy` → archivo estático `dist/privacy/index.html`
+- `/` — landing
+- `/privacy` — política de privacidad (`dist/privacy/index.html`)
