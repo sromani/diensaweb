@@ -1,9 +1,0 @@
-{
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "diensaweb",
-  "compatibility_date": "2024-11-01",
-  "assets": {
-    "html_handling": "none",
-    "not_found_handling": "none"
-  }
-}
