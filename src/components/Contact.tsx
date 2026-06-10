@@ -26,10 +26,12 @@ export function Contact() {
                 </a>
                 <a
                   href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted transition hover:text-accent"
                 >
                   <AppleIcon />
-                  <span>Coming soon on the App Store</span>
+                  <span>Download on the App Store</span>
                 </a>
               </div>
             </div>

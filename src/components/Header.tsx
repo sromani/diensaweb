@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { APP_LOGO_SRC, NAV_LINKS } from "../data/content";
+import { APP_LOGO_SRC, APP_STORE_URL, NAV_LINKS } from "../data/content";
 
 type HeaderProps = {
   variant?: "home" | "legal";
@@ -61,7 +61,9 @@ export function Header({ variant = "home" }: HeaderProps) {
 
         <div className="flex items-center gap-3">
           <a
-            href={sectionHref("#app-store")}
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary hidden px-4 py-2 text-xs sm:inline-flex"
           >
             Download
@@ -123,7 +125,9 @@ export function Header({ variant = "home" }: HeaderProps) {
               )}
             <li className="pt-2">
               <a
-                href={sectionHref("#app-store")}
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary w-full py-2.5 text-sm"
                 onClick={() => setMenuOpen(false)}
               >

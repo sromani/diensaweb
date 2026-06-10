@@ -40,6 +40,8 @@ export function Hero() {
               <a
                 id="app-store"
                 href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary px-6 py-3.5 text-base"
                 aria-label="Download Capture Chess on the App Store"
               >

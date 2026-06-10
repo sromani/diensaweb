@@ -1,4 +1,5 @@
-export const APP_STORE_URL = "#app-store";
+export const APPLE_APP_ID = "6778191746";
+export const APP_STORE_URL = `https://apps.apple.com/app/id${APPLE_APP_ID}`;
 export const CONTACT_EMAIL = "sromani@gmail.com";
 export const APP_LOGO_SRC = "/og-image.png";
 
