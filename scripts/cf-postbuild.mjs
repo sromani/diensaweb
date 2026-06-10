@@ -10,7 +10,7 @@ const workerConfig = {
   compatibility_date: "2024-11-01",
   assets: {
     directory: ".",
-    html_handling: "none",
+    html_handling: "auto-trailing-slash",
     not_found_handling: "none",
   },
 };
