@@ -27,25 +27,31 @@ npm run preview
 
 Output directory: `dist/`
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
 
-1. Push this repo to GitHub/GitLab.
-2. In Cloudflare Dashboard → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
-3. Configure build settings:
-   - **Framework preset:** Vite
+### Option A — Cloudflare Pages (recommended, simplest)
+
+1. Connect the GitHub repo in **Workers & Pages → Create → Pages**.
+2. Build settings:
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
-   - **Node.js version:** 20 (or latest LTS)
-4. Deploy.
+   - **Deploy command:** leave empty (do not use `wrangler deploy`)
+3. Deploy.
 
-Alternatively, deploy from CLI:
+### Option B — Workers static assets
+
+If you use **Workers Builds** with `wrangler deploy`:
+
+- `wrangler.jsonc` sets `not_found_handling: "none"` (no auto `_redirects`).
+- `public/.assetsignore` excludes `_redirects` from upload.
+- `/privacy` is a static file at `dist/privacy/index.html`.
+
+In the Cloudflare dashboard, disable any **SPA / single-page-application** override for the `diensaweb` worker if deploy still fails.
 
 ```bash
 npm run build
 npx wrangler deploy
 ```
-
-`wrangler.jsonc` deploys static assets only (no SPA `_redirects`, which Wrangler rejects). Client route `/privacy` is built as `dist/privacy/index.html`.
 
 ## Before Launch Checklist
 
