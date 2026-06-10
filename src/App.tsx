@@ -12,6 +12,7 @@ export default function App() {
         </Route>
         <Route element={<LegalLayout />}>
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/privacy/" element={<PrivacyPolicyPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

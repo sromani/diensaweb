@@ -7,6 +7,10 @@ export default defineConfig({
     target: "es2020",
     cssMinify: true,
     rollupOptions: {
+      input: {
+        main: "index.html",
+        privacy: "privacy/index.html",
+      },
       output: {
         manualChunks: {
           react: ["react", "react-dom"],

@@ -45,7 +45,7 @@ npm run build
 npx wrangler deploy
 ```
 
-`wrangler.jsonc` enables SPA fallback for client routes like `/privacy` without using `_redirects` (which causes infinite-loop errors on deploy).
+`wrangler.jsonc` deploys static assets only (no SPA `_redirects`, which Wrangler rejects). Client route `/privacy` is built as `dist/privacy/index.html`.
 
 ## Before Launch Checklist
 
