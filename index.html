@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Capture Chess turns any real chess board into instant analysis. Take a photo, detect the position, explore openings, and find the best moves — offline on your device."
+    />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Capture Chess" />
+    <meta name="application-name" content="Capture Chess" />
+    <meta name="apple-mobile-web-app-title" content="Capture Chess" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Capture Chess" />
+    <meta property="og:title" content="Capture Chess — Turn Any Chess Board Into Analysis" />
+    <meta
+      property="og:description"
+      content="Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves."
+    />
+    <meta property="og:url" content="https://capturechess.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://capturechess.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Capture Chess app analyzing a chess board from a photo" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Capture Chess — Turn Any Chess Board Into Analysis" />
+    <meta
+      name="twitter:description"
+      content="Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves."
+    />
+    <meta name="twitter:image" content="https://capturechess.com/og-image.png" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Capture Chess — Turn Any Chess Board Into Analysis</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://capturechess.com/#website",
+            "url": "https://capturechess.com/",
+            "name": "Capture Chess",
+            "description": "Turn any chess board into instant analysis with your phone camera.",
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://capturechess.com/#app",
+            "name": "Capture Chess",
+            "operatingSystem": "iOS",
+            "applicationCategory": "GameApplication",
+            "description": "Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Chess board recognition",
+              "Engine analysis with Stockfish",
+              "Opening explorer",
+              "Guided learning",
+              "Offline support"
+            ],
+            "screenshot": "https://capturechess.com/og-image.png"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://capturechess.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does Capture Chess detect a board from a photo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Capture Chess uses on-device computer vision to locate the board, detect pieces, and build a legal FEN position from your photo — no server upload required."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Capture Chess work offline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Board recognition and Stockfish engine analysis run locally on your device, so you can scan and analyze positions without an internet connection."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What chess engine does Capture Chess use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Capture Chess uses Stockfish WASM for deep engine analysis, evaluation bars, and best-move arrows directly on your phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I learn openings with Capture Chess?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The opening explorer and guided learning modules help you study lines, practice positions, and track your progress."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

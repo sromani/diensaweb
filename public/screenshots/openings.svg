@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="780" viewBox="0 0 390 780">
+  <rect width="390" height="780" fill="#09090b"/>
+  <rect x="0" y="0" width="390" height="52" fill="#0c0c0e"/>
+  <text x="24" y="32" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="13">9:41</text>
+  <text x="195" y="32" text-anchor="middle" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">Openings</text>
+
+  <text x="24" y="96" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">Learn Openings</text>
+  <text x="24" y="122" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="14">Guided, interactive lessons</text>
+
+  <rect x="24" y="148" width="342" height="56" rx="14" fill="#18181b" stroke="#27272a"/>
+  <circle cx="52" cy="176" r="14" fill="#14532d"/>
+  <text x="76" y="182" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="14">Search openings...</text>
+
+  <text x="24" y="238" fill="#4ade80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">POPULAR</text>
+
+  <rect x="24" y="254" width="342" height="88" rx="16" fill="#18181b" stroke="#4ade80" stroke-opacity=".25"/>
+  <text x="44" y="286" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600">Italian Game</text>
+  <text x="44" y="310" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="12">1.e4 e5 2.Nf3 Nc6 3.Bc4</text>
+  <rect x="280" y="276" width="66" height="28" rx="8" fill="#14532d"/>
+  <text x="313" y="295" text-anchor="middle" fill="#4ade80" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">72%</text>
+
+  <rect x="24" y="356" width="342" height="88" rx="16" fill="#18181b" stroke="#27272a"/>
+  <text x="44" y="388" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600">Sicilian Defense</text>
+  <text x="44" y="412" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="12">1.e4 c5  Najdorf &amp; Dragon</text>
+  <rect x="280" y="378" width="66" height="28" rx="8" fill="#27272a"/>
+  <text x="313" y="397" text-anchor="middle" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">41%</text>
+
+  <rect x="24" y="458" width="342" height="88" rx="16" fill="#18181b" stroke="#27272a"/>
+  <text x="44" y="490" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600">Queen's Gambit</text>
+  <text x="44" y="514" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="12">1.d4 d5 2.c4  Declined &amp; Accepted</text>
+  <rect x="280" y="480" width="66" height="28" rx="8" fill="#27272a"/>
+  <text x="313" y="499" text-anchor="middle" fill="#a1a1aa" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">58%</text>
+
+  <rect x="24" y="580" width="342" height="120" rx="16" fill="#14532d" opacity=".35" stroke="#4ade80" stroke-opacity=".3"/>
+  <text x="44" y="612" fill="#4ade80" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">GUIDED LESSON</text>
+  <text x="44" y="640" fill="#fafafa" font-family="Inter, system-ui, sans-serif" font-size="15">Phase 3: Develop the bishop to c4</text>
+  <rect x="44" y="660" width="140" height="28" rx="8" fill="#4ade80"/>
+  <text x="114" y="679" text-anchor="middle" fill="#09090b" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700">Continue</text>
+</svg>
