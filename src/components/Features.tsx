@@ -3,7 +3,7 @@ import { FeatureIcon } from "./Icons";
 
 export function Features() {
   return (
-    <section id="features" className="border-t border-border bg-zinc-950/50 py-20 sm:py-28">
+    <section id="features" className="border-t border-border bg-card/20 py-20 sm:py-28">
       <div className="section-container">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-accent">

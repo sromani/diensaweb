@@ -14,7 +14,7 @@ function Logo() {
         alt=""
         width={36}
         height={36}
-        className="rounded-lg shadow-lg shadow-accent/10 transition group-hover:scale-105"
+        className="rounded-xl shadow-lg shadow-accent/20 transition group-hover:scale-105"
       />
       <span className="text-lg font-bold tracking-tight">
         Capture<span className="text-accent">Chess</span>

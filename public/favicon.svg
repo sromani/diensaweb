@@ -1,22 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Capture Chess">
   <defs>
-    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1d4ed8"/>
-      <stop offset="1" stop-color="#7c3aed"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="20" y1="20" x2="44" y2="44" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4ade80"/>
-      <stop offset="1" stop-color="#16a34a"/>
+    <linearGradient id="gold" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FACC15"/>
+      <stop offset="1" stop-color="#FDE047"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#09090b"/>
-  <rect x="6" y="6" width="52" height="52" rx="12" fill="url(#bg)"/>
-  <circle cx="32" cy="30" r="14" stroke="url(#accent)" stroke-width="2.5" fill="none"/>
-  <circle cx="32" cy="30" r="5" fill="#09090b" stroke="#4ade80" stroke-width="2"/>
-  <path d="M22 42c2-6 6-9 10-9s8 3 10 9" stroke="#fafafa" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M26 38l6-10 6 10" fill="#fafafa"/>
-  <rect x="18" y="18" width="8" height="2" rx="1" fill="#4ade80" opacity=".8"/>
-  <rect x="38" y="18" width="8" height="2" rx="1" fill="#4ade80" opacity=".8"/>
-  <rect x="18" y="44" width="8" height="2" rx="1" fill="#4ade80" opacity=".8"/>
-  <rect x="38" y="44" width="8" height="2" rx="1" fill="#4ade80" opacity=".8"/>
+  <rect width="64" height="64" rx="14" fill="#16213a"/>
+  <rect x="16" y="14" width="8" height="3" rx="1.5" fill="url(#gold)"/>
+  <rect x="40" y="14" width="8" height="3" rx="1.5" fill="url(#gold)"/>
+  <rect x="16" y="47" width="8" height="3" rx="1.5" fill="url(#gold)"/>
+  <rect x="40" y="47" width="8" height="3" rx="1.5" fill="url(#gold)"/>
+  <rect x="14" y="16" width="3" height="8" rx="1.5" fill="url(#gold)"/>
+  <rect x="47" y="16" width="3" height="8" rx="1.5" fill="url(#gold)"/>
+  <rect x="14" y="40" width="3" height="8" rx="1.5" fill="url(#gold)"/>
+  <rect x="47" y="40" width="3" height="8" rx="1.5" fill="url(#gold)"/>
+  <path d="M44 42c-2 1-4 1-6 0-3-2-5-6-5-10 0-5 3-9 7-10 1-4 4-6 8-6 5 0 8 4 8 9 0 1 0 2-.2 3 3 2 5 5 5 9 0 3-2 5-4 5-1 0-2 0-3-1z" fill="#F8FAFC"/>
 </svg>

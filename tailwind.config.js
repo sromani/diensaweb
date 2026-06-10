@@ -49,7 +49,7 @@ export default {
       },
       backgroundImage: {
         "grid-pattern":
-          "linear-gradient(rgb(74 222 128 / 0.04) 1px, transparent 1px), linear-gradient(90deg, rgb(74 222 128 / 0.04) 1px, transparent 1px)",
+          "linear-gradient(rgb(250 204 21 / 0.05) 1px, transparent 1px), linear-gradient(90deg, rgb(250 204 21 / 0.05) 1px, transparent 1px)",
       },
       backgroundSize: {
         grid: "48px 48px",

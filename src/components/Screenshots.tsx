@@ -43,7 +43,7 @@ export function Screenshots() {
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto max-w-xs sm:max-w-sm">
               <div className="absolute -inset-6 rounded-[3rem] bg-accent/5 blur-2xl" />
-              <div className="relative rounded-[2.5rem] border border-border bg-zinc-950 p-3 shadow-2xl">
+              <div className="relative rounded-[2.5rem] border border-border bg-card p-3 shadow-2xl">
                 <div className="overflow-hidden rounded-[2rem] border border-border/80">
                   <img
                     key={current.src}

@@ -13,7 +13,7 @@ export function Hero() {
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute top-40 -right-20 h-72 w-72 rounded-full bg-emerald-900/30 blur-3xl"
+        className="pointer-events-none absolute top-40 -right-20 h-72 w-72 rounded-full bg-amber-500/10 blur-3xl"
       />
 
       <div className="section-container relative">
@@ -26,7 +26,7 @@ export function Hero() {
 
             <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               Turn Any Chess Board{" "}
-              <span className="bg-gradient-to-r from-accent to-emerald-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent to-amber-200 bg-clip-text text-transparent">
                 Into Analysis
               </span>
             </h1>
@@ -85,7 +85,7 @@ export function Hero() {
 function PhoneMockup() {
   return (
     <div className="relative mx-auto w-[280px] sm:w-[300px]">
-      <div className="rounded-[2.5rem] border border-border bg-zinc-950 p-3 shadow-2xl shadow-black/50">
+      <div className="rounded-[2.5rem] border border-border bg-card p-3 shadow-2xl shadow-black/40">
         <div className="overflow-hidden rounded-[2rem] border border-border/80 bg-card">
           <img
             src="/screenshots/mobile-home.png"
