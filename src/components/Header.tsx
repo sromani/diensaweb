@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { NAV_LINKS } from "../data/content";
+import { APP_LOGO_SRC, NAV_LINKS } from "../data/content";
 
 type HeaderProps = {
   variant?: "home" | "legal";
@@ -10,7 +10,7 @@ function Logo() {
   return (
     <Link to="/" className="group flex items-center gap-2.5" aria-label="Capture Chess home">
       <img
-        src="/favicon-32.png"
+        src={APP_LOGO_SRC}
         alt=""
         width={36}
         height={36}

@@ -1,5 +1,6 @@
 export const APP_STORE_URL = "#app-store";
-export const CONTACT_EMAIL = "hello@capturechess.com";
+export const CONTACT_EMAIL = "sromani@gmail.com";
+export const APP_LOGO_SRC = "/og-image.png";
 
 export const LEGAL = {
   appName: "Capture Chess",
