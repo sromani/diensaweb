@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Capture Chess turns any real chess board into instant analysis. Take a photo, detect the position, explore openings, and find the best moves — offline on your device."
+      content="Capture Chess scans any chess board from a photo, analyzes with Stockfish, and offers Chess.com-style Game Review, opening study, and Chess.com import — offline on iPhone."
     />
     <meta name="theme-color" content="#10182c" />
     <meta name="color-scheme" content="dark" />
@@ -22,7 +22,7 @@
     <meta property="og:title" content="Capture Chess — Turn Any Chess Board Into Analysis" />
     <meta
       property="og:description"
-      content="Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves."
+      content="Scan any chess position and analyze it instantly. Game Review, Stockfish engine, opening explorer, and Chess.com import — on iPhone."
     />
     <meta property="og:url" content="https://diensa.com/" />
     <meta property="og:locale" content="en_US" />
@@ -36,7 +36,7 @@
     <meta name="twitter:title" content="Capture Chess — Turn Any Chess Board Into Analysis" />
     <meta
       name="twitter:description"
-      content="Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves."
+      content="Scan any chess position and analyze it instantly. Game Review, Stockfish engine, opening explorer, and Chess.com import — on iPhone."
     />
     <meta name="twitter:image" content="https://diensa.com/og-image.png" />
 
@@ -74,17 +74,18 @@
             "operatingSystem": "iOS",
             "applicationCategory": "GameApplication",
             "downloadUrl": "https://apps.apple.com/app/id6778191746",
-            "description": "Take a photo of a real chess board and instantly analyze the position, discover openings and find the best moves.",
+            "description": "Scan any chess position and analyze it instantly. Game Review, Stockfish, openings, and Chess.com import on iPhone.",
             "offers": {
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "USD"
             },
             "featureList": [
-              "Chess board recognition",
-              "Engine analysis with Stockfish",
-              "Opening explorer",
-              "Guided learning",
+              "Board scan and recognition from photo",
+              "Stockfish engine analysis",
+              "Chess.com-style Game Review",
+              "Opening explorer with guided learning",
+              "Chess.com import and saved games",
               "Offline support"
             ],
             "screenshot": "https://diensa.com/screenshots/mobile-home.png"
@@ -115,6 +116,14 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Capture Chess uses Stockfish WASM for deep engine analysis, evaluation bars, and best-move arrows directly on your phone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Game Review in Capture Chess?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Game Review analyzes completed games move by move with Chess.com-style classifications, accuracy scores, an evaluation chart, and step-by-step replay with coach tips."
                 }
               },
               {

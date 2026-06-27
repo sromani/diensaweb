@@ -1,4 +1,4 @@
-import { APP_STORE_URL } from "../data/content";
+import { APP_STORE_URL, APP_TAGLINE } from "../data/content";
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
           <div className="animate-fade-up">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent-soft/40 px-3 py-1 text-xs font-medium text-accent">
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-              Offline chess vision · Powered by Stockfish
+              Offline vision · Stockfish · Game Review
             </div>
 
             <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
@@ -32,8 +32,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-              Take a photo of a real chess board and instantly analyze the position,
-              discover openings and find the best moves.
+              {APP_TAGLINE} Review games with Chess.com-style move grades, study openings,
+              and import from Chess.com — all on your iPhone.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -57,11 +57,11 @@ export function Hero() {
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
               <li className="flex items-center gap-2">
                 <CheckIcon />
-                On-device recognition
+                Board scan from photo
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon />
-                Stockfish engine
+                Chess.com-style review
               </li>
               <li className="flex items-center gap-2">
                 <CheckIcon />

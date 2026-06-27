@@ -11,8 +11,7 @@ export function HowItWorks() {
           </p>
           <h2 className="section-heading mt-2">From photo to insight in seconds</h2>
           <p className="section-subheading">
-            Three simple steps to turn any physical board into a fully interactive
-            analysis session.
+            Capture a position, refine the board, then analyze or run a full Game Review.
           </p>
         </div>
 

@@ -11,8 +11,8 @@ export function Features() {
           </p>
           <h2 className="section-heading mt-2">Everything you need to study smarter</h2>
           <p className="section-subheading mx-auto">
-            Built on the VisionChess engine stack — local vision, legal board play,
-            and deep Stockfish analysis in your pocket.
+            Scan real boards, analyze with Stockfish, review games like Chess.com,
+            and study openings — built for iPhone, designed to work offline.
           </p>
         </div>
 

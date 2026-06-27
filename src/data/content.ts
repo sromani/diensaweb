@@ -3,6 +3,8 @@ export const APP_STORE_URL = `https://apps.apple.com/app/id${APPLE_APP_ID}`;
 export const CONTACT_EMAIL = "sromani@gmail.com";
 export const APP_LOGO_SRC = "/app-icon.png";
 
+export const APP_TAGLINE = "Scan any chess position and analyze it instantly.";
+
 export const LEGAL = {
   appName: "Capture Chess",
   websiteUrl: "https://diensa.com/",
@@ -22,56 +24,62 @@ export const NAV_LINKS = [
 export const STEPS = [
   {
     number: "01",
-    title: "Take a photo",
+    title: "Capture the position",
     description:
-      "Point your camera at any real chess board or pick an image from your gallery.",
+      "Take a photo of a real board, upload an image, start from an empty board, or import a game from Chess.com.",
     icon: "camera",
   },
   {
     number: "02",
-    title: "Detect the position",
+    title: "Detect & edit",
     description:
-      "On-device vision locates the board, reads the pieces, and builds a legal FEN.",
+      "On-device vision builds a legal FEN. Adjust pieces, turn, castling, or enter a FEN manually if needed.",
     icon: "scan",
   },
   {
     number: "03",
-    title: "Analyze instantly",
+    title: "Analyze & review",
     description:
-      "Stockfish evaluates the position, suggests best moves, and explores openings.",
+      "Stockfish evaluates the position with eval bar and arrows. Run Game Review for Chess.com-style move grades and accuracy.",
     icon: "engine",
   },
 ] as const;
 
 export const FEATURES = [
   {
-    title: "Chess board recognition",
+    title: "Board scan & recognition",
     description:
-      "Local YOLO and geometry models detect boards from any angle — no cloud upload.",
+      "Camera or gallery upload with on-device vision — board detection, piece reading, and FEN validation without cloud upload.",
     icon: "board",
   },
   {
-    title: "Engine analysis",
+    title: "Stockfish engine analysis",
     description:
-      "Stockfish WASM with evaluation bar, MultiPV arrows, and move history.",
+      "Local Stockfish with evaluation bar, best-move arrows, MultiPV lines, mate detection, and an editable interactive board.",
     icon: "engine",
+  },
+  {
+    title: "Game Review",
+    description:
+      "Chess.com-style post-game review: move classifications (Brilliant, Great, Blunder…), accuracy scores, eval chart, and step-by-step replay.",
+    icon: "review",
   },
   {
     title: "Opening explorer",
     description:
-      "Browse and study opening lines with interactive board playback.",
+      "Browse the opening catalog with ECO codes, guided learning, and practice mode for classic lines.",
     icon: "openings",
   },
   {
-    title: "Guided learning",
+    title: "Chess.com import & My games",
     description:
-      "Structured lessons, quizzes, and mastery tracking to improve faster.",
-    icon: "learn",
+      "Import games from Chess.com, save positions locally, and reopen them anytime for analysis or Game Review.",
+    icon: "import",
   },
   {
-    title: "Offline support",
+    title: "Offline-first",
     description:
-      "Scan, analyze, and learn without an internet connection on your device.",
+      "Scan, analyze, study openings, and review games on your device — no server required for core features.",
     icon: "offline",
   },
 ] as const;
@@ -81,7 +89,7 @@ export const SCREENSHOTS = [
     src: "/screenshots/mobile-home.png",
     alt: "Capture Chess home screen with Take Photo and Upload Image actions",
     title: "Home",
-    caption: "Scan or upload from one screen",
+    caption: "Scan, upload, or open saved games",
   },
   {
     src: "/screenshots/scan-result.png",
@@ -93,13 +101,13 @@ export const SCREENSHOTS = [
     src: "/screenshots/board-analysis.png",
     alt: "Interactive board with Stockfish evaluation and best-move arrows",
     title: "Analysis",
-    caption: "Depth, eval bar, and engine lines",
+    caption: "Eval bar, engine lines, and edit board",
   },
   {
     src: "/screenshots/openings.png",
     alt: "Opening catalog with guided learning and practice",
     title: "Openings",
-    caption: "Study classic lines on the go",
+    caption: "Guided learning and practice mode",
   },
 ] as const;
 
@@ -110,14 +118,24 @@ export const FAQ_ITEMS = [
       "Capture Chess uses on-device computer vision — board localization, piece detection, and FEN validation — to read any real chess board from a camera photo or gallery image. Processing stays on your phone.",
   },
   {
+    question: "What is Game Review?",
+    answer:
+      "Game Review analyzes your completed games move by move with Chess.com-style classifications (Best, Great, Brilliant, Blunder, and more), accuracy scores, an evaluation chart, and a replay mode with coach tips. Choose Fast, Standard, or Deep analysis profiles.",
+  },
+  {
+    question: "Can I import games from Chess.com?",
+    answer:
+      "Yes. Import your Chess.com games directly in the app, save them to My games, and run Stockfish analysis or full Game Review on any imported game.",
+  },
+  {
     question: "Does it work offline?",
     answer:
-      "Yes. After the initial model download, board scanning and Stockfish analysis run entirely offline. No server is required for core features.",
+      "Yes. After the initial model download, board scanning, Stockfish analysis, opening study, and Game Review run entirely on your device.",
   },
   {
     question: "What chess engine powers the analysis?",
     answer:
-      "Stockfish WASM runs locally on your device, providing deep evaluation, best-move suggestions, and MultiPV engine arrows on the interactive board.",
+      "Stockfish runs locally on your device, providing deep evaluation, best-move suggestions, MultiPV engine arrows, and the analysis behind Game Review.",
   },
   {
     question: "Can I correct a misdetected position?",
@@ -127,7 +145,7 @@ export const FAQ_ITEMS = [
   {
     question: "Is Capture Chess available on Android?",
     answer:
-      "Capture Chess is launching on iOS first. Android support is on the roadmap — join the waitlist via our contact form to get notified.",
+      "Capture Chess is available on iOS. Android support is on the roadmap — contact us if you'd like to be notified.",
   },
   {
     question: "Does the app store my photos?",

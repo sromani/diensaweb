@@ -14,7 +14,7 @@ export function Screenshots() {
           </p>
           <h2 className="section-heading mt-2">See Capture Chess in action</h2>
           <p className="section-subheading">
-            Scan boards, review detected positions, and dive into engine-powered analysis
+            Scan boards, run Game Review on imported games, and explore openings
             — all from a clean, focused mobile interface.
           </p>
         </div>
